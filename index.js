@@ -213,7 +213,7 @@ conn.ev.on('creds.update', saveCreds)
   await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
             }
             await Promise.all([
-              saveMessage(mek),
+              const { saveMessage } = require('./lib/database');,
             ]);
   const m = sms(conn, mek)
   const type = getContentType(mek.message)
