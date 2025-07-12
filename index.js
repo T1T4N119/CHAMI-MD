@@ -246,7 +246,7 @@ conn.ev.on('creds.update', saveCreds)
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('94766315540', '94758244851);
+    const jawad = ['94766315540', '94758244851'];
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
